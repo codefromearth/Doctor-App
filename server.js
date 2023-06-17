@@ -3,10 +3,11 @@ const colors=require('colors')
 const morgan=require('morgan')
 const dotenv=require('dotenv')
 const connectDB = require('./config/db')
+const path=require('path')
 dotenv.config()
 const app=express()
 var cors = require('cors')
-const path=require('path')
+
 
 const userRoutes=require('./routes/userRoutes')
 //mongodb connection
